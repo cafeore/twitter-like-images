@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>twitter</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<form method="post" action="/twitter">
+	    <p>ユーザID:<input type="text" name="userid"></p>
+	    <p>読み込むツイート数:<input type="number" name="count"></p>
+	    <p><input type="submit"></p>
+	</form>
+    <% tweets.forEach(function(img){ %>
+      <img src="<%= img %>">
+    <% }) %>
+  </body>
+</html>
